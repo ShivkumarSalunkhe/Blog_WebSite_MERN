@@ -38,7 +38,7 @@ export const Create = () => {
     }
     try {
       const res = await axios.post("https://blog-website-mern.onrender.com/posts", newPost)
-      window.location.replace("https://blog-website-mern.onrender.com/post/" + res.data._id)
+      window.location.replace("https://blog-website-mern.onrender.com/post/"+res.data._id)
     } catch (error) {}
   }
 
