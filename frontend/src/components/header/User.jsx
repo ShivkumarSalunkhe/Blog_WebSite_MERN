@@ -19,7 +19,7 @@ export const User = () => {
     setProfileOpen(false)
   }
 
-  const PublicFlo = "https://blog-website-mern.onrender.com/images/"
+  const PublicFlo = "/images/"
 
   return (
     <>
