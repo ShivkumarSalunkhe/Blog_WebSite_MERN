@@ -18,7 +18,7 @@ export const Regsiter = () => {
         email,
         password,
       })
-      res.data && window.location.replace("https://blog-website-mern.onrender.com/login")
+      res.data && window.location.replace("/login")
     } catch (error) {
       setError(true)
     }
