@@ -13,7 +13,7 @@ export const Account = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [succ, setSucc] = useState(false)
-  const PublicFlo = "http://localhost:5000/images/"
+  const PublicFlo = "https://blog-website-mern.onrender.com/images/"
 
   const handleSubmit = async (e) => {
     e.preventDefault()

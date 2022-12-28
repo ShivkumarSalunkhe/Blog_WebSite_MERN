@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 export const Card = ({ posts }) => {
   // create file garnebelema
-  const PublicFlo = "http://localhost:5000/images/"
+  const PublicFlo = "https://blog-website-mern.onrender.com/images/"
   return (
     <>
       <section className='blog'>
@@ -25,7 +25,7 @@ export const Card = ({ posts }) => {
                 <Link to={`/post/${item._id}`}>
                   <h3>{item.title}</h3>
                 </Link>
-                <p>{item.desc.slice(0, 180)}...</p>
+                <p>{item.desc}...</p>
                 <div className='date'>
                   <AiOutlineClockCircle className='icon' /> <label htmlFor=''>{new Date(item.createdAt).toDateString()}</label>
                   <AiOutlineComment className='icon' /> <label htmlFor=''>27</label>
