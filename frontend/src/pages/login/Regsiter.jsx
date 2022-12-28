@@ -13,12 +13,12 @@ export const Regsiter = () => {
     e.preventDefault()
     setError(false)
     try {
-      const res = await axios.post("/auth/register", {
+      const res = await axios.post("https://blog-website-mern.onrender.com/auth/register", {
         username,
         email,
         password,
       })
-      res.data && window.location.replace("/login")
+      res.data && window.location.replace("https://blog-website-mern.onrender.com/login")
     } catch (error) {
       setError(true)
     }
