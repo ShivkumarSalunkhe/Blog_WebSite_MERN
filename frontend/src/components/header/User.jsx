@@ -19,7 +19,7 @@ export const User = () => {
     setProfileOpen(false)
   }
 
-  const PublicFlo = "/images/"
+  const PublicFlo = "https://blog-website-mern.onrender.com/images/"
 
   return (
     <>
@@ -38,7 +38,7 @@ export const User = () => {
                     </div>
                     <div className='text'>
                       <h4>{user.username}</h4>
-                      <label>Los Angeles, CA</label>
+                      <label>India</label>
                     </div>
                   </div>
                 </Link>
