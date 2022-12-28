@@ -42,7 +42,7 @@ export const Account = () => {
       const res = await axios.put("https://blog-website-mern.onrender.com/users/" + user._id, updateUser)
       setSucc(true)
       dispatch({ type: "UPDATE_SUCC", payload: res.data })
-      window.location.reload()
+      window.location.replace("/")
     } catch (error) {
       dispatch({ type: "UPDATE_FAILED" })
     }
