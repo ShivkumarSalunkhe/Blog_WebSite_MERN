@@ -27,14 +27,7 @@ router.put("/:id", async (req, res) => {
     res.status(401).json("You can update your account")
   }
 })
-/* 
-{
-    "userId" : "6332700aeda4d5e6fda5628a",
-    "username":"sunil",
-    "email": "sunil@gmail.com",
-    "password":"sunil"
-}
- */
+
 
 // delete
 router.delete("/:id", async (req, res) => {
@@ -57,12 +50,7 @@ router.delete("/:id", async (req, res) => {
     res.status(401).json("You can delete only your account")
   }
 })
-/* 
- {
-    "userId" : "633277ed7e57ec2eb50f9f18",
-    "username":"sunil",
-    "password":"sunil"
- } */
+
 
 // get   user
 router.get("/:id", async (req, res) => {

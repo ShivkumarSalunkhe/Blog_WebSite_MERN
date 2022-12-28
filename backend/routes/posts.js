@@ -11,12 +11,8 @@ router.post("/", async (req, res) => {
     res.status(500).json(error)
   }
 })
-/* 
-{
-    "username":"admin",
-    "title":"test5",
-    "desc":"loreme2"
-} */
+
+
 
 // update post
 router.put("/:id", async (req, res) => {
@@ -95,6 +91,6 @@ router.get("/", async (req, res) => {
   }
 })
 
-//localhost:5000/posts?user=ram
+
 
 module.exports = router
